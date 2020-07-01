@@ -34,7 +34,7 @@ namespace HangFireCore
     
     #region IScheduler 
     
-    public async Task CreateScheduledJob()
+    public void CreateScheduledJob()
     {
       logger.LogInformation(string.Format("Starting Scheduled job in background. Time now: {0}", DateTime.UtcNow));
       //Thread.Sleep(1000);
@@ -62,7 +62,7 @@ namespace HangFireCore
           using (var client = new WebClient())
           {
             var uri = new Uri(url);
-            client.DownloadFileAsync(uri, targetFilename);
+            client.DownloadFile(uri, targetFilename);
           }
         }
         catch (Exception ex)

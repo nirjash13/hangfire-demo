@@ -4,6 +4,6 @@ namespace HangFireCore
 {
   public interface IScheduler
   {
-    Task CreateScheduledJob();
+    void CreateScheduledJob();
   }
 }
