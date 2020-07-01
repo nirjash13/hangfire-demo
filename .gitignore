@@ -1,8 +1,0 @@
-﻿################################################################################
-# This .gitignore file was automatically created by Microsoft(R) Visual Studio.
-################################################################################
-
-/HangFireCore/bin/Debug/netcoreapp3.1
-/HangFireCore/obj
-/.vs/HangFireCore/DesignTimeBuild/.dtbcache.v2
-/.vs/HangFireCore
